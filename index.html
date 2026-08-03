@@ -1,39 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>index</title>
+    <link rel="stylesheet" href="static/images/styles/global.css">
+
 </head>
 <body>
-    <img src="foto_perfil.JPEG" alt ="Foto de perfil " width="200">
-    <h2>Perfil Profesional:</h2>
-    <p>Mi nombre es Juan José Ocampo Gómez, soy estudiante de ingenieria de sistemas, 
-        con esta carrera busco fortalecer mis conocimientos, aprender a resolver problemas
-        de una manera optima y segura, mejorar mi calidad de vida, mejorar mis relaciones sociales, ser un gran arquitecto que es por donde me quiero especializar y ser feliz haciendo lo que me gusta.
-    </p>
-    <strong>Correo:</strong> juanocampogomez2004@gmail.com <br>
-    <strong>Teléfono:</strong> 3014244039<br>
-    <strong>Ubicación:</strong> Carrera 93 #34aa - 53 int 210
-
-    <ol>Experiencia Educativa:
-        <li>Hogar infantil pastorcito</li>
-        <li>Jardin infantil Cristobal Colón</li>
-        <li>Institución Educativa Lucrecio Jaramillo Sección Agrupación Colombia</li>
-        <li>Institución Educativa Lucrecio Jaramillo</li>
-    </ol>
-
-    <ol>Experiencia Laboral:
-        <li>Comidas Andres - Restaurante</li>
-        <li>Combustibles de Colombia S.A</li>
-        <li>OpenLogistica</li>
-    </ol>
-
-    <ul>
-        <li><a href="https://github.com/juanocampo08">GitHub.</a></li>
-        <li><a href="https://www.instagram.com/ocampojuanjo1402/">Instagram.</a></li>
-        <li><a href="https://www.facebook.com/juan.ocampo.753137?locale=es_LA">Facebook.</a></li>
-    </ul>
-    
+    <div class="cv-page">
+        <div class="cv-sheet">
+            <header class="cv-header">
+                <img id="perfil" src="/static/images/foto-perfil.JPEG" alt="Foto de perfil " width="200">
+                <div class="cv-info-header">
+                    <h1 class="cv-name">Juan José Ocampo Gómez</h1>
+                <p class="cv-role">Estudiante de Ingenieria De Sistemas</p>
+                </div>
+            
+            </header>
+            <hr class="cv-header-rule" />
+            <div class="cv-body">
+                <section class="cv-section">
+                    <div class="cv-section-header">    
+                        <h2 class="cv-section-title" >Perfil Profesional:</h2>
+                        <hr class="cv-section-rule" />
+                    </div>
+                    <p style= "font-size: 13.5px; line-height: 1.75; color: #3a3a3a; font-weight: 300; max-width: 560px;" >
+                        Mi nombre es Juan José Ocampo Gómez, soy estudiante de ingenieria de sistemas, 
+                        con esta carrera busco fortalecer mis conocimientos, aprender a resolver problemas
+                        de una manera optima y segura, mejorar mi calidad de vida, mejorar mis relaciones sociales, ser un gran arquitecto que es por donde me quiero especializar y ser feliz haciendo lo que me gusta.
+                    </p>
+                    <strong>Correo:</strong> juanocampogomez2004@gmail.com <br>
+                    <strong>Teléfono:</strong> 3014244039<br>
+                    <strong>Ubicación:</strong> Carrera 93 #34aa - 53 int 210
+                </section>
+                <section class="cv-section">
+                    <div class="cv-section-header">
+                        <h2 class="cv-section-title">Experiencia Educativa</h2>
+                        <hr class="cv-section-rule" />
+                    </div>
+                    <ol class="cv-exp-bullets">
+                        <li>Hogar infantil pastorcito</li>
+                        <li>Jardin infantil Cristobal Colón</li>
+                        <li>Institución Educativa Lucrecio Jaramillo Sección Agrupación Colombia</li>
+                        <li>Institución Educativa Lucrecio Jaramillo</li>
+                    </ol>
+                </section>
+                <section class="cv-section">
+                    <div class="cv-section-header">
+                        <h2 class="cv-section-title">Experiencia Laboral:</h2>
+                        <hr class="cv-section-rule" />
+                    </div>
+                    <ol class="cv-exp-bullets">
+                        <li>Comidas Andres - Restaurante</li>
+                        <li>Combustibles de Colombia S.A</li>
+                        <li>OpenLogistica</li>
+                    </ol>
+                </section>
+                
+                <section class="cv-section">
+                    <div class="cv-section-header">
+                        <h2 class="cv-section-title">Redes Sociales:</h2>
+                        <hr class="cv-section-rule" />
+                    </div>
+                    <ul class="cv-exp-bullets">
+                        <li><a href="https://github.com/juanocampo08" target="_blank">GitHub.</a></li>
+                        <li><a href="https://www.instagram.com/ocampojuanjo1402/" target="_blank">Instagram.</a></li>
+                        <li><a href="https://www.facebook.com/juan.ocampo.753137?locale=es_LA" target="_blank">Facebook.</a></li>
+                    </ul>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
