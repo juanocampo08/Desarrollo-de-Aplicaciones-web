@@ -1,0 +1,24 @@
+{
+  "name": "desarrollo-de-aplicaciones-web",
+  "version": "1.0.0",
+  "description": "Ejercicios de TypeScript",
+  "homepage": "https://github.com/juanocampo08/Desarrollo-de-Aplicaciones-web#readme",
+  "bugs": {
+    "url": "https://github.com/juanocampo08/Desarrollo-de-Aplicaciones-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanocampo08/Desarrollo-de-Aplicaciones-web.git"
+  },
+  "license": "ISC",
+  "author": "Juan José",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
