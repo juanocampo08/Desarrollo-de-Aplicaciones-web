@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASM Market | Belleza, Vitaminas y Moda USA</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-container">
+    <a href="#" class="logo-link">
+      <img src="assets/images/Logo.jpg" alt="Logo de ASM Market" class="logo-img">
+      <span class="brand-name">ASM Market</span>
+    </a>
+  </div>
+  
+  <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+    &#9776;
+  </button>
+
+  <nav class="nav" id="nav-menu">
+    <ul>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#encargos">Encargos & Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section>
+      <h1>ASM Market — Productos Importados de USA</h1>
+      <p>Explora nuestro catálogo exclusivo de belleza, vitaminas y tendencias de moda.</p>
+    </section>
+
+    <section id="catalogo">
+      <h2>Nuestro Catálogo</h2>
+
+      <div>
+        <button data-category="todos">Todos</button>
+        <button data-category="Beauty">Beauty</button>
+        <button data-category="Vitaminas">Vitaminas</button>
+        <button data-category="Fashion">Fashion</button>
+      </div>
+
+      <div id="product-grid"></div>
+    </section>
+
+    <section id="encargos">
+      <h2>Solicitar Encargo o Contacto</h2>
+      <form id="contact-form" novalidate>
+        <div>
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <span id="error-nombre"></span>
+        </div>
+
+        <div>
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" name="email" required>
+          <span id="error-email"></span>
+        </div>
+
+        <div>
+          <label for="categoria-encargo">Categoría de interés *</label>
+          <select id="categoria-encargo" name="categoria" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Beauty">Beauty</option>
+            <option value="Vitaminas">Vitaminas</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Otro">Otro producto personalizado</option>
+          </select>
+          <span id="error-categoria"></span>
+        </div>
+
+        <div>
+          <label for="mensaje">Detalles del encargo o mensaje *</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          <span id="error-mensaje"></span>
+        </div>
+
+        <button type="submit">Enviar Solicitud</button>
+        <div id="form-success"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ASM Market — Todos los derechos reservados.</p>
+    <p>Síguenos en Instagram: <a href="https://instagram.com/asmmarket_" target="_blank" rel="noopener noreferrer">@asmmarket_</a></p>
+  </footer>
+
+</body>
+</html>
