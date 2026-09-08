@@ -1,0 +1,146 @@
+const productos = [
+  {
+    id: 1,
+    nombre: "Nature's Truth Restore & Unwind Ashwagandha Gummies",
+    categoria: "Vitaminas",
+    precio: 90000,
+    descripcion: "Gomitas masticables con extracto de ashwagandha y sabor tropical. Ayudan a relajar la mente, reducir el estrés y promover el descanso.",
+    imagen: "assets/images/natures-truth-ashwagandha-gummies.jpg"
+  },
+  {
+    id: 2,
+    nombre: "KOO2 by Sprinter Advanced Skin Hydration Mix",
+    categoria: "Vitaminas",
+    precio: 160000,
+    descripcion: "Mezcla hidratante en sobres con electrolitos, péptidos de colágeno Verisol y ácido hialurónico. Mejora la elasticidad de la piel y reduce arrugas.",
+    imagen: "assets/images/koo2-advanced-skin-hydration-mix.jpg"
+  },
+  {
+    id: 3,
+    nombre: "Truly Mango Margs Exfoliating Body Scrub",
+    categoria: "Beauty",
+    precio: 75000,
+    descripcion: "Exfoliante corporal formulado con sal marina y notas de mango y piña. Elimina impurezas y células muertas dejando la piel suave y renovada.",
+    imagen: "assets/images/truly-mango-margs-body-scrub.jpg"
+  },
+  {
+    id: 4,
+    nombre: "Nature Made Burp-Less Fish Oil 1200 mg",
+    categoria: "Vitaminas",
+    precio: 135000,
+    descripcion: "Suplemento de aceite de pescado con 360 mg de Omega-3 purificado para eliminar el mercurio. Apoya la salud cardiovascular sin dejar sabor a pescado.",
+    imagen: "assets/images/nature-made-fish-oil-1200mg.jpg"
+  },
+  {
+    id: 5,
+    nombre: "Nature's Bounty Hair, Skin & Nails Softgels Extra Strength",
+    categoria: "Vitaminas",
+    precio: 120000,
+    descripcion: "Cápsulas líquidas de máxima potencia con 5,000 mcg de biotina y aceite de argán. Fortalecen el cabello, la piel y las uñas desde el interior.",
+    imagen: "assets/images/natures-bounty-hair-skin-nails-softgels.jpg"
+  },
+  {
+    id: 6,
+    nombre: "Nature Made Iron 65 mg",
+    categoria: "Vitaminas",
+    precio: 70000,
+    descripcion: "Suplemento de hierro esencial para la formación de glóbulos rojos. Ayuda a combatir la deficiencia de hierro y a mantener los niveles de energía.",
+    imagen: "assets/images/nature-made-iron-65mg.jpg"
+  },
+  {
+    id: 7,
+    nombre: "Nature's Bounty High Absorption Magnesium Glycinate 240 mg",
+    categoria: "Vitaminas",
+    precio: 110000,
+    descripcion: "Glicinato de magnesio de alta absorción que promueve la relajación muscular y apoya la salud de los huesos, corazón y sistema nervioso.",
+    imagen: "assets/images/natures-bounty-magnesium-glycinate.jpg"
+  },
+  {
+    id: 8,
+    nombre: "Medias Tobilleras Nike Blancas",
+    categoria: "Fashion",
+    precio: 40000,
+    descripcion: "Medias tobilleras deportivas de algodón en color blanco con el logo de Nike. Brindan ajuste cómodo, suavidad y transpirabilidad diarias.",
+    imagen: "assets/images/nike-white-ankle-socks.jpg"
+  },
+  {
+    id: 9,
+    nombre: "Nature's Bounty Melatonin 10 mg Twin Pack",
+    categoria: "Vitaminas",
+    precio: 100000,
+    descripcion: "Paquete doble de melatonina de 10 mg libre de drogas. Ayuda a conciliar el sueño más rápido y favorece un descanso nocturno reparador.",
+    imagen: "assets/images/natures-bounty-melatonin-10mg-twin-pack.jpg"
+  },
+  {
+    id: 10,
+    nombre: "Nature Made Multi For Her",
+    categoria: "Vitaminas",
+    precio: 120000,
+    descripcion: "Multivitamínico para mujer con 23 nutrientes clave, incluyendo hierro y calcio. Apoya el sistema inmunológico, la salud ósea y la energía celular.",
+    imagen: "assets/images/nature-made-multi-for-her.jpg"
+  },
+  {
+    id: 11,
+    nombre: "Maybelline The Colossal Mascara",
+    categoria: "Beauty",
+    precio: 30000,
+    descripcion: "Pestañina de volumen extremo que resalta la mirada sin dejar grumos. Ofrece una larga duración de hasta 24 horas.",
+    imagen: "assets/images/maybelline-the-colossal-mascara.jpg"
+  },
+  {
+    id: 12,
+    nombre: "Milani Baked Blush",
+    categoria: "Beauty",
+    precio: 50000,
+    descripcion: "Rubor horneado de textura sedosa que aporta un color radiante a las mejillas. Proporciona un acabado luminoso y de aspecto natural.",
+    imagen: "assets/images/milani-baked-blush.jpg"
+  },
+  {
+    id: 13,
+    nombre: "OLLY Probiotic + Prebiotic Gummies",
+    categoria: "Vitaminas",
+    precio: 60000,
+    descripcion: "Gomitas masticables con cultivos vivos y fibra prebiótica. Favorecen la salud digestiva, el equilibrio intestinal y el sistema inmunológico.",
+    imagen: "assets/images/olly-probiotic-prebiotic-gummies.jpg"
+  },
+  {
+    id: 14,
+    nombre: "Mario Badescu Facial Spray Set",
+    categoria: "Beauty",
+    precio: 80000,
+    descripcion: "Dúo de sprays faciales hidratantes formulados con aloe vera y extractos botánicos. Refrescan, calman y devuelven la luminosidad natural a la piel.",
+    imagen: "assets/images/mario-badescu-facial-spray-set.jpg"
+  },
+  {
+    id: 15,
+    nombre: "OLLY Goodbye Stress Gummies",
+    categoria: "Vitaminas",
+    precio: 50000,
+    descripcion: "Gomitas masticables con GABA, L-teanina y bálsamo de limón. Ayudan a calmar la mente y a manejar el estrés diario manteniéndote enfocado.",
+    imagen: "assets/images/olly-goodbye-stress-gummies.jpg"
+  },
+  {
+    id: 16,
+    nombre: "Stanley Quencher H2.0 FlowState Tumbler",
+    categoria: "Fashion",
+    precio: 150000,
+    descripcion: "Termo de acero inoxidable con asa, pajita reutilizable y acabado brillante holográfico. Mantiene las bebidas frías durante horas con su aislamiento al vacío.",
+    imagen: "assets/images/stanley-quencher-tumbler.jpg"
+  },
+  {
+    id: 17,
+    nombre: "Glow Recipe Watermelon Glow Duo (Toner + Dew Drops)",
+    categoria: "Beauty",
+    precio: 140000,
+    descripcion: "Dúo mini de cuidado facial con tónico exfoliante PHA + BHA y sérum de niacinamida. Minimiza poros, hidrata profundamente y aporta un brillo radiante.",
+    imagen: "assets/images/glow-recipe-watermelon-glow-duo.jpg"
+  },
+  {
+    id: 18,
+    nombre: "Nature Made Vitamin B12 1000 mcg",
+    categoria: "Vitaminas",
+    precio: 120000,
+    descripcion: "Suplemento de vitamina B12 en cápsulas blandas. Apoya la función de las células cerebrales y ayuda a reducir la fatiga en personas con deficiencia.",
+    imagen: "assets/images/nature-made-vitamin-b12-1000mcg.jpg"
+  }
+];
