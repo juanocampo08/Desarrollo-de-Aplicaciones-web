@@ -4,10 +4,13 @@
 
 https://asm-market.vercel.app/
 
+## Documentación
+
+El archivo "catalog.js" se encarga de tomar los productos definidos en "data.js" y mostrarlos en pantalla como tarjetas. Recorre la lista de productos y por cada uno, crea los elementos HTML necesarios (imagen, título, categoría, descripción, precio y botón) usando "*createElement*", y los va insertando en el contenedor del catálogo con "*appendChild*". Así, si mañana cambio o agrego productos en "data.js", el catálogo se actualiza solo sin tocar el HTML.
+
 ## Estructura del proyecto
 
 ```
-asm-market/
 ├── index.html          # Página principal del sitio
 ├── css/
 │   └── styles.css      # Estilos: colores, tipografía, Flexbox, Grid, responsive
