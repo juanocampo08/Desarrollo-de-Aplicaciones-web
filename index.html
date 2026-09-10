@@ -29,40 +29,40 @@
 </header>
 
   <main>
-    <section>
+    <section class="hero">
       <h1>ASM Market — Productos Importados de USA</h1>
       <p>Explora nuestro catálogo exclusivo de belleza, vitaminas y tendencias de moda.</p>
     </section>
 
-    <section id="catalogo">
+    <section id="catalogo" class = "catalog-section">
       <h2>Nuestro Catálogo</h2>
 
-      <div>
-        <button data-category="todos">Todos</button>
-        <button data-category="Beauty">Beauty</button>
-        <button data-category="Vitaminas">Vitaminas</button>
-        <button data-category="Fashion">Fashion</button>
+      <div class = "filter-buttons">
+        <button data-category="todos" class = "filter-btn active">Todos</button>
+        <button data-category="Beauty" class = "filter-btn" >Beauty</button>
+        <button data-category="Vitaminas" class = "filter-btn" >Vitaminas</button>
+        <button data-category="Fashion" class = "filter-btn">Fashion</button>
       </div>
 
-      <div id="product-grid"></div>
+      <div id="product-grid" class = "product-grid"></div>
     </section>
 
-    <section id="encargos">
+    <section id="encargos" class = "contact-section">
       <h2>Solicitar Encargo o Contacto</h2>
-      <form id="contact-form" novalidate>
-        <div>
+      <form id="contact-form" class = "contact-form" novalidate>
+        <div class = "contact-form>
           <label for="nombre">Nombre completo *</label>
           <input type="text" id="nombre" name="nombre" required>
           <span id="error-nombre"></span>
         </div>
 
-        <div>
+        <div class = "contact-form>
           <label for="email">Correo electrónico *</label>
           <input type="email" id="email" name="email" required>
           <span id="error-email"></span>
         </div>
 
-        <div>
+        <div class = "contact-form>
           <label for="categoria-encargo">Categoría de interés *</label>
           <select id="categoria-encargo" name="categoria" required>
             <option value="">Selecciona una opción</option>
@@ -74,22 +74,28 @@
           <span id="error-categoria"></span>
         </div>
 
-        <div>
+        <div class = "contact-form>
           <label for="mensaje">Detalles del encargo o mensaje *</label>
           <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
           <span id="error-mensaje"></span>
         </div>
 
-        <button type="submit">Enviar Solicitud</button>
-        <div id="form-success"></div>
+        <button type="submit" class = "submit-btn">Enviar Solicitud</button>
+        <div id="form-success" class = "success-message"></div>
       </form>
     </section>
   </main>
 
-  <footer>
+  <footer class = "footer">
     <p>&copy; 2026 ASM Market — Todos los derechos reservados.</p>
     <p>Síguenos en Instagram: <a href="https://instagram.com/asmmarket_" target="_blank" rel="noopener noreferrer">@asmmarket_</a></p>
   </footer>
+  <script src = "js/data.js"></script>
+  <script src = "js/catalog.js"></script>
+  <script src = "js/filters.js"></script>
+  <script src = "js/nav.js"></script>
+  <script src = "js/form.js"></script>
+  <script src = "js/main.js"></script>
 
 </body>
 </html>
