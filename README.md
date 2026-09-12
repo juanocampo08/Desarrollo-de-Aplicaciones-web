@@ -8,6 +8,10 @@ https://asm-market.vercel.app/
 
 El archivo "catalog.js" se encarga de tomar los productos definidos en "data.js" y mostrarlos en pantalla como tarjetas. Recorre la lista de productos y por cada uno, crea los elementos HTML necesarios (imagen, título, categoría, descripción, precio y botón) usando "*createElement*", y los va insertando en el contenedor del catálogo con "*appendChild*". Así, si mañana cambio o agrego productos en "data.js", el catálogo se actualiza solo sin tocar el HTML.
 
+---
+
+El archivo "*nav.js*" el menú de navegación en dispositivos móviles. Usa "*classList.toggle('active')*" sobre el menú: si no tiene la clase active se la agrega, y si ya la tiene se la quita — así el mismo botón sirve para abrir y cerrar el menú. El CSS se encarga de mostrar u ocultar el menú según tenga o no esa clase (display: none por defecto, display: block cuando está activo). El botón hamburguesa solo aparece en pantallas de 768px de ancho o menos, gracias al **@media** en el CSS; en escritorio se muestra el menú normal.
+
 ## Estructura del proyecto
 
 ```
