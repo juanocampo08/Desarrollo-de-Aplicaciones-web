@@ -12,6 +12,10 @@ El archivo "catalog.js" se encarga de tomar los productos definidos en "data.js"
 
 El archivo "*nav.js*" el menú de navegación en dispositivos móviles. Usa "*classList.toggle('active')*" sobre el menú: si no tiene la clase active se la agrega, y si ya la tiene se la quita — así el mismo botón sirve para abrir y cerrar el menú. El CSS se encarga de mostrar u ocultar el menú según tenga o no esa clase (display: none por defecto, display: block cuando está activo). El botón hamburguesa solo aparece en pantallas de 768px de ancho o menos, gracias al **@media** en el CSS; en escritorio se muestra el menú normal.
 
+---
+
+El archivo "*filters.js*" permite filtrar el catálogo por categoría (Beauty, Vitaminas, Fashion, o Todos). Recorre todos los botones de filtro con "*querySelectorAll*" y le agrega un evento de clic a cada uno. Al hacer clic en un botón, primero se le quita la clase active a todos los demás y se le agrega solo al que se presionó (para resaltar cuál está seleccionado). Luego se lee la categoría del botón usando el atributo data-category del HTML, y con el método **.filter()** de arreglos se crea una nueva lista solo con los productos de esa categoría. Esa lista filtrada se le pasa a **renderizarProductos()** (la misma función de "*catalog.js*") para que vuelva a dibujar el catálogo, ahora solo con los productos que corresponden.
+
 ## Estructura del proyecto
 
 ```
