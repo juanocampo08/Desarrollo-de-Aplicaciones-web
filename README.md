@@ -16,6 +16,10 @@ El archivo "*nav.js*" el menú de navegación en dispositivos móviles. Usa "*cl
 
 El archivo "*filters.js*" permite filtrar el catálogo por categoría (Beauty, Vitaminas, Fashion, o Todos). Recorre todos los botones de filtro con "*querySelectorAll*" y le agrega un evento de clic a cada uno. Al hacer clic en un botón, primero se le quita la clase active a todos los demás y se le agrega solo al que se presionó (para resaltar cuál está seleccionado). Luego se lee la categoría del botón usando el atributo data-category del HTML, y con el método **.filter()** de arreglos se crea una nueva lista solo con los productos de esa categoría. Esa lista filtrada se le pasa a **renderizarProductos()** (la misma función de "*catalog.js*") para que vuelva a dibujar el catálogo, ahora solo con los productos que corresponden.
 
+---
+
+El archivo form.js valida el formulario de "Solicitar Encargo o Contacto" antes de enviarlo. Usa preventDefault() para evitar que la página se recargue automáticamente al enviar, y en su lugar revisa cada campo: que el nombre tenga mínimo 3 caracteres, que el correo tenga formato válido, que se haya seleccionado una categoría, y que el mensaje tenga mínimo 10 caracteres. Si algún campo falla, se muestra el error junto al campo correspondiente (sin usar alert). Si todo es válido, arma un mensaje con los datos ingresados y abre WhatsApp con ese mensaje ya escrito, usando el enlace wa.me, para que el cliente solo tenga que confirmar el envío
+
 ## Estructura del proyecto
 
 ```

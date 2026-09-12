@@ -44,7 +44,7 @@ function inicializarFormulario() {
     }
 
     if (esValido) {
-      const numeroWhatsapp = "15169137456";
+      const numeroWhatsapp = "573014244039";
       const texto = `Hola, soy ${nombre}.%0aCorreo: ${email}%0aCategoría: ${categoria}%0aMensaje: ${mensaje}`;
       const url = `https://wa.me/${numeroWhatsapp}?text=${texto}`;
 
