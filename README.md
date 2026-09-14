@@ -56,16 +56,14 @@ El archivo "*filters.js*" permite filtrar el catálogo por categoría (Beauty, V
 El archivo form.js valida el formulario de "Solicitar Encargo o Contacto" antes de enviarlo. Usa preventDefault() para evitar que la página se recargue automáticamente al enviar, y en su lugar revisa cada campo: que el nombre tenga mínimo 3 caracteres, que el correo tenga formato válido, que se haya seleccionado una categoría, y que el mensaje tenga mínimo 10 caracteres. Si algún campo falla, se muestra el error junto al campo correspondiente (sin usar alert). Si todo es válido, arma un mensaje con los datos ingresados y abre WhatsApp con ese mensaje ya escrito, usando el enlace wa.me, para que el cliente solo tenga que confirmar el envío
 
 ## ¿Usé IA? ¿Para qué y qué cambiaste tú?
-Sí, usé IA como apoyo puntual: para generar la primera versión de las descripciones 
-de los productos a partir de fotos, y para resolver dudas sobre JavaScript (por ejemplo 
-entender diferencias entre const/let, cómo funciona classList.toggle, o cómo armar un 
-enlace de WhatsApp con los datos del formulario). El código lo revisé, ajusté y probé 
-yo mismo en cada paso — cambié rutas de imágenes que no coincidían, precios reales, y 
-adapté el código para no usar cosas que no vimos en clase (como ES Modules).
+Sí, usé IA como apoyo puntual: para generar la primera versión de las descripciones de los productos a partir de fotos, y para resolver dudas sobre JavaScript (cómo funciona classList.toggle, o cómo armar un enlace de WhatsApp con los datos del formulario). El código lo revisé, ajusté y probé yo mismo en cada paso, cambié rutas de imágenes que no coincidían, precios reales, y adapté el código para no usar cosas que no vimos en clase (como ES Modules).
+
+## ¿Qué fue lo más difícil y cómo lo resolviste
+
+Lo más difícil fue el despliegue en Vercel. Como el repositorio tenía otros proyectos además del mío (un CV ya desplegado en producción), tuve que aprender a crear un proyecto nuevo en Vercel apuntando específicamente a mi rama y mi carpeta, sin dañar el despliegue que ya existía. Tuve varios intentos fallidos por confundir el Root Directory y la rama de producción, hasta que decidí mover todo mi proyecto a la raíz de mi rama para simplificar la configuración. Al final, no necesité hacer nada más complejo donde me quedé con el mismo despliegue inicial que había creado para el proyecto, solo ajustando la rama y el directorio raíz hasta que funcionó correctamente.
+
 
 ```
-
-
 ## Estructura del proyecto
 
 ├── index.html          # Página principal del sitio
