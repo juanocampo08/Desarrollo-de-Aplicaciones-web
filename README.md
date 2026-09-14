@@ -20,9 +20,32 @@ El archivo "*filters.js*" permite filtrar el catálogo por categoría (Beauty, V
 
 El archivo form.js valida el formulario de "Solicitar Encargo o Contacto" antes de enviarlo. Usa preventDefault() para evitar que la página se recargue automáticamente al enviar, y en su lugar revisa cada campo: que el nombre tenga mínimo 3 caracteres, que el correo tenga formato válido, que se haya seleccionado una categoría, y que el mensaje tenga mínimo 10 caracteres. Si algún campo falla, se muestra el error junto al campo correspondiente (sin usar alert). Si todo es válido, arma un mensaje con los datos ingresados y abre WhatsApp con ese mensaje ya escrito, usando el enlace wa.me, para que el cliente solo tenga que confirmar el envío
 
+# Capturas
+
+## Vista de escritorio
+![Vista de escritorio](assets/images/screenshots/desktop(3).png)
+
+![Vista de escritorio](assets/images/screenshots/desktop(2).png)
+
+![Vista de escritorio](assets/images/screenshots/desktop(1).png)
+
+## Vista de móvil
+![Vista de móvil](assets/images/screenshots/mobile(3).PNG)
+
+![Vista de móvil](assets/images/screenshots/mobile(2).PNG)
+
+![Vista de móvil](assets/images/screenshots/mobile(1).PNG)
+
+
+## Vista de tablet
+![Vista de tablet](assets/images/screenshots/tablet(2).jpg)
+
+![Vista de tablet](assets/images/screenshots/tablet(3).jpg)
+
+![Vista de tablet](assets/images/screenshots/tablet(1).jpg)
+```
 ## Estructura del proyecto
 
-```
 ├── index.html          # Página principal del sitio
 ├── css/
 │   └── styles.css      # Estilos: colores, tipografía, Flexbox, Grid, responsive
