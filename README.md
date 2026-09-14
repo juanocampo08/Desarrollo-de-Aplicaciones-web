@@ -50,6 +50,18 @@ El archivo form.js valida el formulario de "Solicitar Encargo o Contacto" antes 
 ![Vista de tablet](assets/images/screenshots/tablet(3).jpg)
 
 ![Vista de tablet](assets/images/screenshots/tablet(1).jpg)
+
+# Decisiones técnicas.
+
+## ¿Usé IA? ¿Para qué y qué cambiaste tú?
+Sí, usé IA como apoyo puntual: para generar la primera versión de las descripciones 
+de los productos a partir de fotos, y para resolver dudas sobre JavaScript (por ejemplo 
+entender diferencias entre const/let, cómo funciona classList.toggle, o cómo armar un 
+enlace de WhatsApp con los datos del formulario). El código lo revisé, ajusté y probé 
+yo mismo en cada paso — cambié rutas de imágenes que no coincidían, precios reales, y 
+adapté el código para no usar cosas que no vimos en clase (como ES Modules).
+
+
 ```
 ## Estructura del proyecto
 
