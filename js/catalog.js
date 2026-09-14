@@ -31,7 +31,7 @@ function renderizarProductos(lista){
 
         const titulo = document.createElement('h3');
         titulo.className = 'product-title';
-        titulo.textContent = prod.name;
+        titulo.textContent = prod.nombre;
         
         const descripcion = document.createElement('p');
         descripcion.className = 'product-description';
@@ -41,9 +41,13 @@ function renderizarProductos(lista){
         precio.className = 'product-price';
         precio.textContent = '$' + prod.precio.toLocaleString('es-CO');
 
-        const boton = document.createElement('span');
+        const boton = document.createElement('button');
         boton.className = 'btn-order';
         boton.textContent = 'Pedir por encargo';
+
+        boton.addEventListener('click', function () {
+            document.querySelector('#encargos').scrollIntoView({ behavior: 'smooth' });
+        });
 
         cardBody.appendChild(categoria);
         cardBody.appendChild(titulo);
