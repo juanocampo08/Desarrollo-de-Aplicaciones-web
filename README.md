@@ -1,5 +1,12 @@
 # ASM Market
 
+## Descripción del proyecto
+ASM Market es el sitio web de un emprendimiento de una familiar, dedicado a traer productos 
+originales desde USA (belleza, vitaminas y accesorios de moda) a Colombia. Está pensado 
+para personas que buscan productos de marcas internacionales que no son fáciles o son mas baratos que 
+conseguirlos acá. El sitio muestra un catálogo filtrable por categoría y permite 
+solicitar un encargo o hacer una pregunta directamente por WhatsApp.
+
 ### URL del Sitio web desplegado.
 
 https://asm-market.vercel.app/
